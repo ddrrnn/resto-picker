@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <h2 class="italic">to help your indecisive ass.</h2>
+    <h2 class="italic"></h2>
   )
 }
 
