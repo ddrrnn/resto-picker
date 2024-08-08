@@ -72,7 +72,7 @@ app.put("/resto/:id/increment", async (req, res) => {
 });
 
 
-app.listen(process.env.PORT, () => {
+app.listen(5000, () => {
     console.log("server has started");
 });
 
