@@ -1,11 +1,11 @@
-const Pool = require("pg").Pool;
+const { Pool } = require("pg");
 
 const pool = new Pool({
-    user:"postgres",
-    password:"rain51dbduran",
-    host:"localhost",
-    port: 5432,
-    database:"restopicker"
+    user: process.env.DB_USER || "postgres",
+    password: process.env.DB_PASSWORD || "your_default_password",
+    host: process.env.DB_HOST || "localhost",
+    port: process.env.DB_PORT || 5432,
+    database: process.env.DB_NAME || "restopicker"
 });
 
 module.exports = pool;
