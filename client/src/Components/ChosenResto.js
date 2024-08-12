@@ -45,7 +45,7 @@ const ChosenResto = ({ setRandomResto, setShowResto }) => {
             )}
             
             <button 
-                className="btn btn-outline btn-accent"
+                className="btn btn-outline btn-primary"
                 onClick={handleButtonClick}
             >
                 PICK RESTO!

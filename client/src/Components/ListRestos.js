@@ -88,7 +88,7 @@ const ListRestos = ({ randomResto, showResto }) => {
                             <tr key={resto.resto_id}>
                                 <td>{resto.name}</td>
                                 <td className="text-center">{resto.count}</td>
-                                <td><button className="btn btn-ghost" onClick={() => deleteResto(resto.resto_id)}>—</button></td>
+                                <td><button className="btn btn-xs btn-error btn-outline" onClick={() => deleteResto(resto.resto_id)}>—</button></td>
                             </tr>
                         ))}
                     </tbody>
