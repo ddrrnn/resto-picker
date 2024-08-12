@@ -2,10 +2,13 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
+require('dotenv').config();
+
 
 //middleware
 app.use(cors());
 app.use(express.json());
+
 
 
 //CREATE RESTO 
@@ -18,7 +21,7 @@ app.post("/resto", async(req,res) => {
        res.json(newResto.rows[0]);
 
     } catch (error) {
-       console.error(err.message);
+       console.error(error.message);
     }
 })
 
